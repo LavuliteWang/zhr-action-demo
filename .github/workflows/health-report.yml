@@ -27,5 +27,10 @@ jobs:
           password: ${{ secrets[matrix.password] }}
           cookie_eai_sess: ${{ secrets[matrix.cookie_eai_sess] }}
           dingtalk_token: ${{ secrets[matrix.dingtalk_token] }}
+          username2: ${{ secrets[matrix.username] }}
+          password2: ${{ secrets[matrix.password] }}
+          cookie_eai_sess2: ${{ secrets[matrix.cookie_eai_sess] }}
+          dingtalk_token2: ${{ secrets[matrix.dingtalk_token] }}
+          
         env:
           ACTION_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
